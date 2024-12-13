@@ -1,0 +1,102 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  max-width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+header {
+  text-align: center;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  /* border: 1px solid yellow; */
+}
+
+#start-game {
+  padding: 1rem 2rem;
+  margin: 0 5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: #6b33ee;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+#start-game:hover {
+  background-color: #aaa;
+  color: rgb(88, 51, 221);
+}
+
+main {
+  flex: 1;
+  flex-basis: auto;
+  display: none;
+  flex-direction: column;
+  /* border: solid 1px red; */
+  min-width: 50vw;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.player-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  /* border: 1px solid orange; */
+}
+
+.cell {
+  flex: 1 0 50px;
+  padding: 3rem;
+  /* border: 1px solid black; */
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#restart-game {
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: #6b33ee;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+#restart-game:hover {
+  background-color: #aaa;
+  color: rgb(88, 51, 221);
+}
+
+.announce {
+  font-size: 1.5rem;
+  padding: 2rem;
+}

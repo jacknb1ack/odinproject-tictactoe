@@ -101,3 +101,5 @@ const GameController = (() => {
 })();
 
 const game = GameController;
+
+const DisplayController = (() => {})();
