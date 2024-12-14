@@ -12,16 +12,22 @@
       <header>
         <h1>Tic-Tac-Toe Game</h1>
         <h3>Press "Start Game" button to start a game</h3>
+        <div class="player-form">
+          <label for="p1-name">Player 1 Name (X) </label>
+          <input type="text" name="p1-name" id="p1-name" />
+          <label for="p2-name">Player 2 Name (O) </label>
+          <input type="text" name="p2-name" id="p2-name" />
+        </div>
         <button id="start-game">Start Game</button>
       </header>
       <main>
         <div class="player-container">
-          <div class="player1">Player 1</div>
-          <div class="player2">Player 2</div>
+          <div class="player1"></div>
+          <div class="player2"></div>
         </div>
         <div class="board-container">
           <div class="board">
-            <div class="cell" id="cell-0">X</div>
+            <!-- <div class="cell" id="cell-0">X</div>
             <div class="cell" id="cell-1">X</div>
             <div class="cell" id="cell-2">X</div>
             <div class="cell" id="cell-3">0</div>
@@ -29,11 +35,11 @@
             <div class="cell" id="cell-5">0</div>
             <div class="cell" id="cell-6">X</div>
             <div class="cell" id="cell-7">X</div>
-            <div class="cell" id="cell-8">X</div>
+            <div class="cell" id="cell-8">X</div> -->
           </div>
         </div>
         <div id="result-container">
-          <div class="announce">Winner</div>
+          <div class="announce"></div>
         </div>
         <button id="restart-game">Restart Game</button>
       </main>

@@ -1,3 +1,4 @@
+/* Reset some defaults */
 *,
 body {
   padding: 0;
@@ -10,7 +11,6 @@ body {
   max-width: 960px;
   height: 100vh;
   margin: 0 auto;
-  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,16 @@ header {
   flex-direction: column;
   justify-content: space-around;
   gap: 1rem;
-  /* border: 1px solid yellow; */
+}
+
+.player-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input {
+  font-size: 1.2rem;
 }
 
 #start-game {
@@ -46,14 +55,12 @@ header {
 
 main {
   flex: 1;
-  flex-basis: auto;
-  display: none;
+  display: none; /* Hide the game board initially */
   flex-direction: column;
-  /* border: solid 1px red; */
-  min-width: 50vw;
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
+  min-width: 50vw;
 }
 
 .player-container {
@@ -63,21 +70,28 @@ main {
   font-size: 1.2rem;
 }
 
+.board-container {
+  margin-top: 1rem;
+}
+
 .board {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  width: 400px;
-  /* border: 1px solid orange; */
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  width: 315px;
+  height: 315px;
+  background-color: #f1f1f1;
 }
 
 .cell {
-  flex: 1 0 50px;
-  padding: 3rem;
-  /* border: 1px solid black; */
-  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
   font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 #restart-game {
